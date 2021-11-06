@@ -1,31 +1,7 @@
-<div align="center"><img src="https://file.hankcs.com/img/hanlp-github-banner.png" height="100px"/></div>
+# HanLP: Han Language Processing
 
-<h2 align="center">HanLP: Han Language Processing</h2>
+[中文](https://github.com/hankcs/HanLP/tree/doc-zh) | [日本語](https://github.com/hankcs/HanLP/tree/doc-ja) | [docs](https://hanlp.hankcs.com/docs/) | [1.x](https://github.com/hankcs/HanLP/tree/1.x) | [forum](https://bbs.hankcs.com/) | [![Open In Colab](https://file.hankcs.com/img/colab-badge.svg)](https://colab.research.google.com/drive/1KPX6t1y36TOzRIeB4Kt3uJ1twuj6WuFv?usp=sharing)
 
-<div align="center">
-    <a href="https://github.com/hankcs/HanLP/actions">
-       <img alt="Run Tests" src="https://github.com/hankcs/hanlp/actions/workflows/python-package.yml/badge.svg?branch=master">
-    </a>
-    <a href="https://pypi.org/project/hanlp/">
-        <img alt="PyPI Version" src="https://img.shields.io/pypi/v/hanlp?color=blue">
-    </a>
-    <a href="https://pypi.org/project/hanlp/">
-        <img alt="Python Versions" src="https://img.shields.io/pypi/pyversions/hanlp?colorB=blue">
-    </a>
-    <a href="https://pepy.tech/project/hanlp">
-        <img alt="Downloads" src="https://pepy.tech/badge/hanlp">
-    </a>
-    <a href="https://colab.research.google.com/drive/1KPX6t1y36TOzRIeB4Kt3uJ1twuj6WuFv?usp=sharing">
-        <img alt="Open In Colab" src="https://file.hankcs.com/img/colab-badge.svg">
-    </a>
-</div>
-
-<h4 align="center">
-    <a href="https://github.com/hankcs/HanLP/tree/doc-zh">中文</a> |
-    <a href="https://github.com/hankcs/HanLP/tree/doc-ja">日本語</a> |
-    <a href="https://hanlp.hankcs.com/docs/">Docs</a> |
-    <a href="https://bbs.hankcs.com/">Forum</a>
-</h4>
 The multilingual NLP library for researchers and companies, built on PyTorch and TensorFlow 2.x, for advancing state-of-the-art deep learning techniques in both academia and industry. HanLP was designed from day one to be efficient, user friendly and extendable.
 
 Thanks to open-access corpora like Universal Dependencies and OntoNotes, HanLP 2.1 now offers 10 joint tasks on 104 languages: tokenization, lemmatization, part-of-speech tagging, token feature extraction, dependency parsing, constituency parsing, semantic role labeling, semantic dependency parsing, abstract meaning representation (AMR) parsing.
@@ -46,7 +22,7 @@ Create a client with our API endpoint and your auth.
 
 ```python
 from hanlp_restful import HanLPClient
-HanLP = HanLPClient('https://hanlp.hankcs.com/api', auth=None, language='mul') # mul: multilingual, zh: Chinese
+HanLP = HanLPClient('https://hanlp.hankcs.com/api', auth=None, language='mul')
 ```
 
 ### Java
@@ -64,7 +40,7 @@ Insert the following dependency into your `pom.xml`.
 Create a client with our API endpoint and your auth.
 
 ```java
-HanLPClient HanLP = new HanLPClient("https://hanlp.hankcs.com/api", null, "mul"); // mul: multilingual, zh: Chinese
+HanLPClient HanLP = new HanLPClient("https://hanlp.hankcs.com/api", null, "mul");
 ```
 
 ### Quick Start
@@ -95,8 +71,7 @@ print(HanLP(['In 2021, HanLPv2.1 delivers state-of-the-art multilingual NLP tech
              '2021年 HanLPv2.1为生产环境带来次世代最先进的多语种NLP技术。']))
 ```
 
-- In particular, the Python `HanLPClient` can also be used as a callable function following the same semantics. See [docs](https://hanlp.hankcs.com/docs/tutorial.html) for visualization, annotation guidelines and more details.
-- To process Chinese or Japanese, HanLP provides mono-lingual models in each language which significantly outperform the multi-lingual model. See [docs](https://hanlp.hankcs.com/docs/api/hanlp/pretrained/mtl.html) for the list of models.
+In particular, the Python `HanLPClient` can also be used as a callable function following the same semantics. See [docs](https://hanlp.hankcs.com/docs/tutorial.html) for visualization, annotation guidelines and more details.
 
 ## Train Your Own Models
 
@@ -136,7 +111,7 @@ The result is guaranteed to be `96.70` as the random feed is fixed. Different fr
 
 If you use HanLP in your research, please cite this repository. 
 
-```bibtex
+```latex
 @inproceedings{he-choi-2021-stem,
     title = "The Stem Cell Hypothesis: Dilemma behind Multi-Task Learning with Transformer Encoders",
     author = "He, Han and Choi, Jinho D.",
